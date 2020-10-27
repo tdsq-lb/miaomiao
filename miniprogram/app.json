@@ -1,18 +1,18 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
+    "pages/near/near",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/editUserinfo/editUserinfo",
+    "pages/friendList/friendList",
+    "pages/detail/detail",
+    "pages/editUserinfo/head/head",
+    "pages/editUserinfo/name/name",
+    "pages/editUserinfo/signature/signature",
+    "pages/editUserinfo/location/location",
+    "pages/editUserinfo/phone/phone",
+    "pages/editUserinfo/weixin/weixin"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -20,6 +20,36 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#b2b5b6",
+    "selectedColor": "#967bf5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/tabbar/首页.png",
+        "selectedIconPath": "./images/tabbar/首页_active.png"
+      },
+      {
+        "pagePath": "pages/near/near",
+        "text": "附近",
+        "iconPath": "./images/tabbar/附近.png",
+        "selectedIconPath": "./images/tabbar/附近_active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "./images/tabbar/消息.png",
+        "selectedIconPath": "./images/tabbar/消息_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./images/tabbar/我的.png",
+        "selectedIconPath": "./images/tabbar/我的_active.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

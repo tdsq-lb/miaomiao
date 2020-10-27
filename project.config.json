@@ -54,13 +54,45 @@
     "game": {
       "list": []
     },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
     "miniprogram": {
       "current": 0,
       "list": [
         {
           "id": -1,
           "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide"
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "pages/user/user",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/editUserinfo/editUserinfo",
+          "pathName": "pages/editUserinfo/editUserinfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/editUserinfo/signature/signature",
+          "pathName": "pages/editUserinfo/signature/signature",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/editUserinfo/phone/phone",
+          "pathName": "pages/editUserinfo/phone/phone",
+          "scene": null
         }
       ]
     }

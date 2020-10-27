@@ -1,0 +1,39 @@
+<!--miniprogram/pages/editUserinfo/editUserinfo.wxml-->
+<view class="editUserinfo">
+  <navigator url="./head/head" hover-class="navigator-hover" open-type="navigate">
+    <view class="editUserinfo-list-item">
+      <text>修改头像</text>
+      <text class="iconfont iconarrowRight"></text>
+    </view>
+  </navigator>
+  <navigator url="./name/name" hover-class="navigator-hover" open-type="navigate">
+    <view class="editUserinfo-list-item">
+      <text>修改昵称</text>
+      <text class="iconfont iconarrowRight"></text>
+    </view>
+  </navigator>
+  <navigator url="./signature/signature" hover-class="navigator-hover" open-type="navigate">
+    <view class="editUserinfo-list-item">
+      <text>修改个性签名</text>
+      <text class="iconfont iconarrowRight"></text>
+    </view>
+  </navigator>
+  <navigator url="./location/location" hover-class="navigator-hover" open-type="navigate">
+    <view class="editUserinfo-list-item">
+      <text>共享位置</text>
+      <text class="iconfont iconarrowRight"></text>
+    </view>
+  </navigator>
+  <navigator url="./phone/phone" hover-class="navigator-hover" open-type="navigate">
+    <view class="editUserinfo-list-item">
+      <text>设置手机号<text class="editUserinfo-list-tips">仅好友可见</text></text>
+      <text class="iconfont iconarrowRight"></text>
+    </view>
+  </navigator>
+  <navigator url="./weixin/weixin" hover-class="navigator-hover" open-type="navigate">
+    <view class="editUserinfo-list-item">
+      <text>设置微信号<text class="editUserinfo-list-tips">仅好友可见</text></text>
+      <text class="iconfont iconarrowRight"></text>
+    </view>
+  </navigator>
+</view>

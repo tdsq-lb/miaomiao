@@ -1,0 +1,14 @@
+/* miniprogram/pages/editUserinfo/phone/phone.wxss */
+.phone {
+  padding: 20rpx;
+}
+
+.phone input {
+  border: 1px solid #cccccc;
+  padding: 10rpx 0;
+  border-radius: 10rpx;
+}
+
+.phone button {
+  margin-top: 20rpx;
+}
