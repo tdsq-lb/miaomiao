@@ -1,2 +1,4 @@
 <!--miniprogram/pages/detail/detail.wxml-->
-<text>miniprogram/pages/detail/detail.wxml</text>
+<view class="datail">
+  
+</view>

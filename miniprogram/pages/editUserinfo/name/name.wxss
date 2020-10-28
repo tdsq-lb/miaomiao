@@ -1,1 +1,24 @@
 /* miniprogram/pages/editUserinfo/name/name.wxss */
+.name {
+  padding: 20rpx;
+}
+
+.name-customize input {
+  border: 1px solid #cccccc;
+  padding: 20rpx;
+  border-radius: 10rpx;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+  text-align: center;
+}
+
+.btn button {
+  width: 40%;
+  font-size: 26rpx;
+  line-height: 50rpx;
+}

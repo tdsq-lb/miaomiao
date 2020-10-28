@@ -1,1 +1,32 @@
 /* miniprogram/pages/editUserinfo/head/head.wxss */
+.head {
+  padding: 20rpx;
+}
+
+.head-image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  background-color: #cccccc;
+  margin: 0 auto;
+}
+
+.head-image image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.btn button {
+  width: 40%;
+  font-size: 26rpx;
+  line-height: 50rpx;
+}

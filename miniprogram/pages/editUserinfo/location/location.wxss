@@ -1,1 +1,4 @@
 /* miniprogram/pages/editUserinfo/location/location.wxss */
+.location{
+  padding: 20rpx;
+}

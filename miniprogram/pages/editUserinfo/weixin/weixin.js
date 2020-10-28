@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    weixin: ''
+    weixinNumber: ''
   },
 
   /**
@@ -21,7 +21,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.setData({
+      weixinNumber: app.userInfo.weixinNumber
+    })
   },
 
   /**
@@ -67,13 +69,13 @@ Page({
   },
   handleText(e) {
     this.setData({
-      weixin: e.detail.value
+      weixinNumber: e.detail.value
     })
   },
   handleBtn() {
     const id = app.userInfo._id
     const data = {
-      weixin: this.data.weixin
+      weixinNumber: this.data.weixinNumber
     }
     utils.changdata(id, data)
   }

@@ -52,4 +52,8 @@
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 10rpx;
+  font-size: 26rpx;
 }
+/* .index-list-text text:first-child{
+  background-color: black;
+} */

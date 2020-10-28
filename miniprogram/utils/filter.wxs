@@ -1,0 +1,18 @@
+var wprdSplit = function (word) {
+  if (word.length > 4) {
+    word = word.substring(0, 4) + '...';
+  }
+  return word
+}
+
+var unitFormat = function (number) {
+  if (number >= 1000) {
+    number = (number / 1000).toFixed(1) + 'k'
+  }
+  return number
+}
+
+module.exports = {
+  wprdSplit: wprdSplit,
+  unitFormat: unitFormat
+}

@@ -1,3 +1,4 @@
+<wxs src="../../utils/filter.wxs" module="m1" />
 <view class="index">
   <swiper class="index-swiper" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}">
     <block wx:for="{{imgUrls}}" wx:key="{{index}}">
@@ -7,19 +8,18 @@
     </block>
   </swiper>
   <view class="index-tab">
-    <view class="active">推荐</view>
-    <view>最新</view>
+    <view class="{{current == 'links' ?'active':''}}" data-current="links" bindtap="handleCurrent">推荐</view>
+    <view class="{{current == 'time' ?'active':''}}" data-current="time" bindtap="handleCurrent">最新</view>
   </view>
 
   <view class="index-list">
-    <view class="index-list-item">
-      <image mode="aspectFill"
-        src="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=151472226,3497652000&fm=26&gp=0.jpg" />
+    <view class="index-list-item" wx:for="{{listData}}" wx:key="{{index}}">
+      <image mode="aspectFill" src="{{item.userPhoto}}" data-id="{{item._id}}" bindtap="handlDetail" />
       <view class="index-list-text">
-        <text>小喵喵</text>
-        <text>
+        <text>{{m1.wprdSplit(item.nickName)}}</text>
+        <text bindtap="handleLinks" data-id="{{item._id}}">
           <text class="iconfont icondianzan"></text>
-          <text>100</text>
+          <text>{{m1.unitFormat(item.links)}}</text>
         </text>
       </view>
     </view>

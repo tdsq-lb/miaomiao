@@ -92,6 +92,28 @@
           "id": -1,
           "name": "pages/editUserinfo/phone/phone",
           "pathName": "pages/editUserinfo/phone/phone",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/editUserinfo/name/name",
+          "pathName": "pages/editUserinfo/name/name",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/editUserinfo/head/head",
+          "pathName": "pages/editUserinfo/head/head",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 7,
+          "name": "pages/detail/detail",
+          "pathName": "pages/detail/detail",
+          "query": "",
           "scene": null
         }
       ]

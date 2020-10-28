@@ -1,4 +1,5 @@
 const db = wx.cloud.database()
+const app = getApp()
 
 const changdata = (id, data) => {
   console.log(id, data)
@@ -12,7 +13,7 @@ const changdata = (id, data) => {
     wx.showToast({
       title: '更新成功',
     })
-    // app.userInfo.signature = this.data.signature
+    app.userInfo = Object.assign(app.userInfo, data)
     console.log(res)
   })
 }

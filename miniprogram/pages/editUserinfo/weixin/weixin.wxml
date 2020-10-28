@@ -1,5 +1,5 @@
 <!--miniprogram/pages/editUserinfo/weixin/weixin.wxml-->
 <view class="weixin">
-  <input type="number" value="{{weixin}}" bindinput="handleText" />
+  <input type="number" value="{{weixinNumber}}" bindinput="handleText" />
   <button type="primary" bindtap="handleBtn">设置微信号</button>
 </view>

@@ -1,5 +1,6 @@
 // miniprogram/pages/editUserinfo/location/location.js
-const app = getApp()
+const app = getApp() // 通过内置的getApp方法 拿到 app.js 中的this对象
+var utils = require('../../../utils/utils')
 Page({
 
   /**
@@ -67,6 +68,13 @@ Page({
 
   },
   switchChange(e) {
-    console.log(e.detail.value)
+    this.setData({
+      isLocation : e.detail.value
+    })
+    const id = app.userInfo._id
+    const data = {
+      isLocation: this.data.isLocation
+    }
+    utils.changdata(id, data)
   }
 })
