@@ -1,4 +1,35 @@
 <!--miniprogram/pages/detail/detail.wxml-->
 <view class="datail">
-  
+  <view class="datail-list">
+    <view>
+      <image src="{{datail.userPhoto}}"></image>
+    </view>
+    <view>
+      <text class="lable">昵称：</text>
+      <text>{{datail.nickName}}</text>
+    </view>
+    <view>
+      <text class="lable">个性签名：</text>
+      <text>{{datail.signature}}</text>
+    </view>
+    <view>
+      <text class="lable">手机号：</text>
+      <block wx:if="{{isFriend}}">
+        <text>{{datail.phoneNumber}}</text>
+        <call-phone wx:if="{{datail.weixinNumber}}" phoneNumber="{{datail.phoneNumber}}" />
+      </block>
+      <text wx:else>仅好友可见</text>
+    </view>
+    <view>
+      <text class="lable">微信号：</text>
+      <block wx:if="{{isFriend}}">
+        <text>{{datail.weixinNumber}}</text>
+        <copy-text wx:if="{{datail.weixinNumber}}" copyText="{{datail.weixinNumber}}" />
+      </block>
+      <text wx:else>仅好友可见</text>
+    </view>
+  </view>
+  <block wx:if="{{!isHandle}}">
+    <button type="primary" wx:if="{{!isFriend}}" bindtap="handleAddFriend">添加好友</button>
+  </block>
 </view>

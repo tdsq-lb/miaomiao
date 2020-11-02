@@ -16,12 +16,23 @@ exports.main = async (event, context) => {
     if (typeof event.data == 'string') {
       event.data = eval('(' + event.data + ')') // eval  把字符串转成js语句
     }
-    return await db.collection(event.collection).doc(event.id)
-      .update({
-        data: {
-          ...event.data
-        },
-      })
+    if (event.id) {
+      return await db.collection(event.collection).doc(event.id)
+        .update({
+          data: {
+            ...event.data
+          },
+        })
+    } else {
+      return await db.collection(event.collection).where({
+          ...event.where
+        })
+        .update({
+          data: {
+            ...event.data
+          },
+        })
+    }
   } catch (e) {
     console.error(e)
   }

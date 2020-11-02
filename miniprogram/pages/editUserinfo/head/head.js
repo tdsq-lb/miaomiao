@@ -85,7 +85,7 @@ Page({
   },
   handleBtn() {
     const filePath = this.data.userPhoto
-    const cloudPath = 'my-image' + filePath.match(/\.[^.]+?$/)[0]
+    const cloudPath = 'my-image' + new Date().getTime() + filePath.match(/\.[^.]+?$/)[0]
     wx.cloud.uploadFile({
       cloudPath,
       filePath,

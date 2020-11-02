@@ -34,7 +34,7 @@
   },
   "appid": "wx376bd938e57eaf9b",
   "projectname": "miaomiao",
-  "libVersion": "2.8.1",
+  "libVersion": "2.13.2",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
@@ -114,6 +114,26 @@
           "name": "pages/detail/detail",
           "pathName": "pages/detail/detail",
           "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/user/user",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/near/near",
+          "pathName": "pages/near/near",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/near/near",
+          "pathName": "pages/near/near",
           "scene": null
         }
       ]

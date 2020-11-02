@@ -24,8 +24,7 @@
   "tabBar": {
     "color": "#b2b5b6",
     "selectedColor": "#967bf5",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "./images/tabbar/首页.png",
@@ -50,6 +49,11 @@
         "selectedIconPath": "./images/tabbar/我的_active.png"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

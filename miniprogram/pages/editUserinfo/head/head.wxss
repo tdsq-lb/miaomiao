@@ -26,7 +26,7 @@
 }
 
 .btn button {
-  width: 40%;
+  width: 40% !important;
   font-size: 26rpx;
   line-height: 50rpx;
 }

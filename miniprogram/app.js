@@ -17,5 +17,6 @@ App({
 
     this.globalData = {}
     this.userInfo = {} // 定义全局用户信息数据
+    this.userMseeage = [] // 定义全局用户消息
   }
 })
