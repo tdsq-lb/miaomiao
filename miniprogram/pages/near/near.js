@@ -10,7 +10,8 @@ Page({
   data: {
     longitude: '', // 中心经度
     latitude: '', //中心纬度
-    markers: []
+    markers: [],
+    id: [] // 用户id
   },
 
   /**
@@ -97,48 +98,53 @@ Page({
       userPhoto: true
     }).get().then((res) => {
       const data = res.data
-      let marker = []
-      data.forEach(element => {
+      let markers = []
+      let id = []
+      data.forEach((element, index) => {
         if (element.userPhoto.includes('cloud://')) {
           wx.cloud.getTempFileURL({
             fileList: [element.userPhoto],
             success: res => {
-              marker.push({
-                id: element._id,
+              markers.push({
+                id: index,
                 iconPath: res.fileList[0].tempFileURL,
                 latitude: element.latitude,
                 longitude: element.longitude,
                 width: 30,
                 height: 30
               })
+              id.push(element._id)
               this.setData({
-                markers: marker
+                markers,
+                id
               })
               console.log(marker, '11111111111111111 ===========>>>')
             },
             fail: console.error
           })
         } else {
-          marker.push({
-            id: element._id,
+          markers.push({
+            id: index,
             iconPath: element.userPhoto,
             latitude: element.latitude,
             longitude: element.longitude,
             width: 30,
             height: 30
           })
+          id.push(element._id)
         }
       })
       this.setData({
-        markers: marker
+        markers,
+        id
       })
     })
   },
   // 点击跳转到详情页
   markertap(e) {
-    console.log(e.detail)
-    // wx.navigateTo({
-    //   url: '/pages/detail/detail?userId=' + e.markerId,
-    // })
+    let markerId = this.data.id[e.detail.markerId]
+    wx.navigateTo({
+      url: '/pages/detail/detail?userId=' + markerId,
+    })
   }
 })

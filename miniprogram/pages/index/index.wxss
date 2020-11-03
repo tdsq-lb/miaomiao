@@ -3,6 +3,7 @@
   height: 300rpx;
   border-radius: 10rpx;
   overflow: hidden;
+  margin-top: 100rpx;
 }
 
 .index-swiper image {

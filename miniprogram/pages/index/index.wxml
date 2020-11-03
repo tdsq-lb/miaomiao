@@ -1,4 +1,5 @@
 <wxs src="../../utils/filter.wxs" module="m1" />
+<search />
 <view class="index">
   <swiper class="index-swiper" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}">
     <block wx:for="{{imgUrls}}" wx:key="{{index}}">

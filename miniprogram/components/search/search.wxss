@@ -1,0 +1,85 @@
+/* components/search/search.wxss */
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100rpx;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.containerFocus {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  overflow: hidden;
+  background-color: #ccc;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 20rpx;
+}
+
+.search-text {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border: 1px solid #b4b5b6;
+  border-radius: 10rpx;
+  height: 60rpx;
+  background-color: white;
+}
+
+.search-text input {
+  flex: 1;
+}
+
+.search-text .iconsousuo1 {
+  margin: 0 10rpx;
+}
+
+.search-cancel {
+  margin: 0 10rpx;
+}
+
+.search-history {
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.search-history-btn text {
+  border: 1px solid #b4b5b6;
+  padding: 10rpx 20rpx;
+  margin: 10rpx;
+  border-radius: 20rpx;
+  background-color: white;
+}
+
+.searchList-item {
+  height: 100rpx;
+  border-bottom: 1px #b4b5b6 dashed;
+  margin: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchList-item image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.searchList-item view {
+  display: flex;
+  align-items: center;
+}
